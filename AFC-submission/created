@@ -1,0 +1,21 @@
+{{Ambox
+| name       = AFC submission
+| type       = notice
+| image      = [[File:AFC-Logo.svg|50px]]
+| text       = This article, '''{{SUBPAGENAME}}''', has recently been created via the [[Wikipedia:Articles for creation|Articles for creation process]]. The reviewer is in the process of closing the request, and this tag should be removed soon.
+{{#if:{{NAMESPACE}}||{{#ifexist:Wikipedia talk:Articles for creation/{{SUBPAGENAME}}|----
+'''WARNING:  [[Wikipedia talk:Articles for creation/{{SUBPAGENAME}}]] is {{PAGESIZE:{{SUBPAGENAME}}}} bytes.'''  If it is not a redirect with only 1 edit in its edit history, this may be a "copy and paste" move.  To avoid losing the edit history, administrators should consider [[WP:HISTMERGE|merging the history]] of the AfC draft into this article.  Non-administrators should consider placing <nowiki>{{histmerge|</nowiki>Wikipedia talk:Articles for creation/{{SUBPAGENAME}}<nowiki>}}</nowiki> at the top of this article before removing this ''AFC submission'' template.<includeonly>[[Category:Possible AfC copy-and-paste moves]]</includeonly>}}<!-- #ifexist: -->
+}}<!-- if:{{NAMESPACE}} -->
+----
+<span class="plainlinks" style="font-size: smaller">'''Reviewer tools:''' <!--
+
+-->{{#ifexist:{{TALKPAGENAME}}||&#32;[{{fullurl:{{TALKPAGENAME}}|action=edit&editintro=Template:AFC_submission/banner_editintro&preload=Template:AFC_submission/banner_preload&summary=Add+WPAFC+project+banner}} Preload talk]&#32;&nbsp;}}<!--
+
+-->{{#if:{{{user|}}}|&#32;[{{fullurl:User talk:{{{user}}}|action=edit&editintro=Template:AFC_submission/user_talk_editintro&preload=Template:AFC_submission/user_talk_preload&preloadtitle={{urlencode:Your submission at [[WP:AFC|Articles for creation]]: {{PAGENAME}}}}&section=new}} Inform author]}}<!--
+--></span>
+}}<includeonly>{{#switch:{{lc:{{SUBPAGENAME}}}}|sandbox|sand box|sand-box|test|testcase|test case|test-case|testcases|test cases|test-cases=|#default=[[Category:Pending AfC submissions|C{{#if:{{{submit|}}}|{{#expr:trunc({{{submit}}}/100)}}|3}}]][[Category:Pending AfC submissions in article space]]}}</includeonly>
+
+<noinclude>
+[[Category:WikiProject Articles for creation]]
+{{documentation|Template:AFC submission/doc}}
+</noinclude>
