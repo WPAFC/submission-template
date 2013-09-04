@@ -1,0 +1,30 @@
+<includeonly>__NONEWSECTIONLINK__</includeonly>{{AFC submission/{{#if:{{NAMESPACE}} 
+  |{{#switch:{{ucfirst:{{{1|}}}}}
+   |R        = reviewing
+   |D        = declined
+   |T        = draft
+   |#default = pending
+  }}
+  |{{#ifeq:{{{ns}}}|0
+   |misplaced
+   |created
+  }}
+ }}
+ |submit={{{ts|}}}
+ |author={{{a|}}}
+ |user={{{u|}}}
+ |reason={{{2|}}}
+ |details={{{3|}}}
+ |small={{{small|}}}
+ |decliner={{{decliner|}}}
+ |declinets={{{declinets|}}}
+ |ts={{{ts|}}}
+ |type={{{type}}}
+ |1={{{2|}}}
+ |2={{{3|}}}
+}}<includeonly>[[Category:{{AfC date category
+ |ts={{{ts|}}}
+}}|{{SUBPAGENAME}}]]
+{{#ifeq:{{NAMESPACE}}|{{ns:2}}|[[Category:AfC_submissions in userspace]]}}{{#invoke:AFC submission catcheck|checkforcats}}</includeonly><noinclude>
+{{Documentation}}
+</noinclude>__NOINDEX__
