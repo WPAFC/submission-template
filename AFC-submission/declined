@@ -1,0 +1,84 @@
+<!--
+-->{{ombox
+    | type  = notice
+    | image = none
+    | imageright = [[File:AFC-Logo_Decline.svg|center|75px]]
+    | style = background-color: #ffeeee;
+    | class = compact-ambox
+    | text  = 
+      <span style="font-size: 115%">'''Submission declined<!--
+   -->{{#if: {{{decliner|}}}{{{declinets|}}}
+       | &#32;<!--
+       -->{{#if: {{{declinets|}}}
+          | on {{#time: j F Y|{{{declinets}}}}}<!--
+         -->{{#if: {{{decliner|}}}
+             | &#32;
+            }}
+         }}<!--
+      -->{{#if: {{{decliner|}}}
+          |by {{user0 | {{{decliner}}} }}
+         }}
+      }}<!--
+   -->.'''</span>
+<!--
+   -->{{#if: {{{reason|}}}
+       | {{divbox|gray||{{AFC submission/comments|{{{reason}}}|{{{details|}}}}}}}
+      }}<!--
+   -->{{#ifeq: {{lc: {{{small|}}} }} | yes
+       |
+       |
+You are encouraged to make improvements by clicking on the "'''Edit'''" tab at the top of this page. If you require extra help, ask a question at the [{{fullurl:Wikipedia:WikiProject_Articles_for_creation/Help_desk|action=edit&section=new&preloadtitle={{urlencode:Review of [[{{NAMESPACE}}:{{PAGENAME}}]]}}}} '''Articles for creation help desk''']. There is also a [http://webchat.freenode.net/?channels=wikipedia-en-help '''live help chat'''] with experienced editors. {{findsources|{{SUBPAGENAME}}}}.
+      }}
+<!--
+   --><small><!--
+   -->{{#if: {{{decliner|}}}
+       | Declined by [[User:{{{decliner}}}|{{{decliner}}}]]<!--
+      -->{{#if: {{{declinets|}}}
+          | &#32;{{time ago|{{{declinets}}}}}
+         }}.
+       | The reviewer(s) who declined this submission will be listed in the [{{SERVER}}{{localurl:{{NAMESPACE}}:{{PAGENAME}}|action=history}} page history].
+      }} <!--
+   -->Last edited <!--
+   -->{{#if: {{REVISIONUSER}}
+       | by [[User:{{REVISIONUSER}}|{{REVISIONUSER}}]]
+      }} {{time ago|{{REVISIONTIMESTAMP}}}}. <!--
+   -->{{#if: {{{user|}}}
+       | Reviewer: [<!--
+      -->{{fullurl: User talk:{{{user}}}
+          | action=edit&editintro=Template:AFC_submission/user_talk_editintro_declined&preload=Template:AFC_submission/user_talk_preload_declined&preloadtitle=<!--
+         -->{{urlencode:Your submission at [[WP:AFC|Articles for creation]]<!--
+            -->{{#ifeq: {{TALKSPACE}} | {{ns:Project talk}}
+                | : {{SUBPAGENAME}}
+               }}
+            }}&section=new
+         }} <!--
+      -->Inform author].
+      }}<!--
+   --></small><!--
+   --><div style="border-top: 1px #AAA solid; margin-top:5px;"><!--
+   --><table><tr><!--
+   --><td><!--
+   -->{{Clickable button 2
+       | Resubmit
+       | url = 
+         {{fullurl: {{FULLPAGENAME}}
+          | action=edit&section=new&preload=Template:AFC_submission/Subst&editintro=Template:AFC_submission/Subst/Editintro
+         }}
+       | class = ui-button-blue
+      }}<!--
+   --></td><!--
+   --><td><!--
+   -->Please note that if the issues are not fixed, the draft will be rejected again.<!--
+   --></td><!--
+   --></tr></table><!--
+   --></div>
+   }}<!--
+--><includeonly><!--
+-->{{NOINDEX}}<!--
+-->[[Category:Declined AfC submissions|{{SUBPAGENAME}}]]<!--
+-->{{#ifexpr: {{#time: U | {{REVISIONTIMESTAMP}} +6 months }} < {{#time: U}}
+    | [[Category:G13 eligible AfC submissions|{{padleft:{{#expr:(({{#time:y|{{REVISIONTIMESTAMP}}}}*12)+{{REVISIONMONTH1}})}}|3|0}}]]
+   }}<!--
+--></includeonly><noinclude>
+{{documentation}}
+</noinclude>
