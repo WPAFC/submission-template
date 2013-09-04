@@ -1,0 +1,5 @@
+<includeonly>{{ {{{|safesubst:}}}require subst
+   |{{AFC submission|t||ts={{SUBST:REVISIONTIMESTAMP}}|u={{{1|{{SUBST:REVISIONUSER}}}}}|ns={{SUBST:NAMESPACENUMBER}}}}
+}}</includeonly><noinclude>
+{{documentation}}
+</noinclude>
