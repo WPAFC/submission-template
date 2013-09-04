@@ -1,0 +1,12 @@
+{{ambox
+|name=AFC submission
+|type=content
+|image=[[File:AFC-Logo.svg|40px]]
+|text=This is a misplaced [[Wikipedia:Articles for creation|articles for creation]] submission. If it is not yet ready for article space, please consider [{{fullurl:index.php|title=Special:MovePage/{{FULLPAGENAMEE}}&wpNewTitle=Wikipedia+talk:Articles+for+creation/{{SUBPAGENAMEE}}&wpReason={{urlencode:Moving misplaced [[Wikipedia:Articles for creation|AfC]] submission to project space for review}}}} moving] it to project space rather than marking it for deletion. 
+{{#switch:{{NAMESPACE}}
+|User|User talk=
+|#default='''Note:''' If you are not an  administrator please tag the redirect left behind after the move for deletion.
+}}
+}}
+<includeonly>[[Category:Pending AfC submissions|M{{#if:{{{submit|}}}|{{#expr:trunc({{{submit}}}/100)}}|3}}]]</includeonly>
+<noinclude>[[Category:WikiProject Articles for creation]]</noinclude>
