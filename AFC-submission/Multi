@@ -1,0 +1,48 @@
+{{Ambox
+|name  = Multiple AfC submissions
+|doc   = no
+<!--|subst = {{<includeonly>subst:</includeonly>substcheck}}<!-- Disabled for now while in alpha creation stage -->
+|class = ambox-multiple_issues compact-ambox
+|type  = content
+|text  =
+<table border="1" width="80%"><tr><th>&nbsp;</th><th>Action</th><th>When</th><th>Reason</th></tr>
+{{AFC_submission/message|{{{section|}}}
+| name       = {{{AFC submission/created|}}}
+| template   = created
+| image      =
+| timestamp  =
+| reason     =
+}}{{AFC_submission/message|{{{section|}}}
+| name       = {{{AFC submission/draft|}}}
+| template   = draft
+| image      =
+| timestamp  =
+| reason     = 
+}}{{AFC_submission/message|{{{section|}}}
+| name       = {{{AFC submission/reviewing|}}}
+| template   = reviewing
+| image      =
+| timestamp  =
+| reason     = 
+}}{{AFC_submission/message|{{{section|}}}
+| name       = {{{AFC submission/pending|}}}
+| template   = pending
+| image      =
+| timestamp  =
+| reason     = 
+}}{{AFC_submission/message|{{{section|}}}
+| name       = {{{AFC comment|}}}
+| template   = comment
+| image      =
+| timestamp  =
+| reason     = 
+}}{{AFC_submission/message|{{{section|}}}
+| name       = {{{AFC submission/declined|}}}
+| template   = declined
+| image      =
+| timestamp  =
+| reason     = 
+}}
+</table>
+
+<!-- Ambox close -->}}<!-- Ambox close -->
