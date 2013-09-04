@@ -1,0 +1,83 @@
+<span class="plainlinks">
+----
+{{hidden|Reviewer tools|style={{#if:{{#switch:{{FULLPAGENAME}}|Wikipedia:Articles for creation/{{SUBPAGENAME}}|Wikipedia talk:Articles for creation/{{SUBPAGENAME}}=|#default=yes}}{{#if:{{{submit|}}}|yes|}}{{#ifexist:{{{SUBPAGENAME|}}}|yes|}}|padding-bottom: 0;|}}|2=
+*[[Wikipedia:WikiProject Articles for creation/Reviewing instructions|Instructions]]<!--
+
+--> [[Special:WhatLinksHere/{{SUBPAGENAME}}|⋈]] [[:{{SUBPAGENAME}}|{{SUBPAGENAME}}]]<!--
+
+-->&nbsp;{{unicode|&emsp;}}<!-- This comment
+-- here (before a noinclude-tag) prevents an implicit newline.
+-->([[{{TALKPAGENAME:{{SUBPAGENAME}}}}|talk]]:<!--
+
+-->&nbsp;[{{fullurl:{{TALKPAGENAME:{{SUBPAGENAME}}}}|action=edit&editintro=Template:AFC_submission/banner_editintro&preload=Template:AFC_submission/banner_preload}} +]<!--
+
+-->&nbsp;[{{fullurl:{{TALKPAGENAME:{{SUBPAGENAME}}}}|action=edit&editintro=Template:AFC_submission/banner_editintro&preload=Template:AFC_submission/banner_preload_(bio)}} bio])<!--
+
+-->&nbsp;{{unicode|&emsp;}}<!-- This comment
+-- here (before a noinclude-tag) prevents an implicit newline.
+-->([{{fullurl:index.php|title=Special:Log&page={{SUBPAGENAMEE}}}} log])<!--
+
+-->{{int:dot-separator}}Move:<!--
+
+--><!-- This comment
+-- here (before a noinclude-tag) prevents an implicit newline.
+-->{{unicode|&emsp;}}{{#ifeq:{{NAMESPACE}}|Wikipedia|
+     |&nbsp;[{{fullurl:index.php|title=Special:MovePage/{{FULLPAGENAMEE}}&wpNewTitle=Wikipedia_talk:Articles+for+creation/{{#ifeq:{{lc:{{SUBPAGENAMEE}}}}|sandbox|{{urlencode:{{#titleparts:{{FULLPAGENAMEE}}|1}}/{{#titleparts:{{FULLPAGENAMEE}}||-1}}|WIKI}}|{{SUBPAGENAMEE}}}}&wpReason=Move+Articles+for+creation+submission+to+project+space}} To project space]
+   }}<!--
+
+-->{{int:dot-separator}}[http://toolserver.org/~dispenser/cgi-bin/webreflinks.py?page={{FULLPAGENAMEE}}&citeweb=on&overwrite=simple&limit=200 Run Reflinks] {{int:dot-separator}} [http://toolserver.org/~verisimilus/Bot/citation-bot/doibot.php?edit=toolbar&slow=1&user=&page={{FULLPAGENAMEE}} Run Citation Bot]<!--
+
+-->{{int:dot-separator}}Search:&nbsp;[http://www.google.com/search?&q={{urlencode:{{SUBPAGENAME}}}} Google], [http://www.bing.com/search?q={{urlencode:{{SUBPAGENAME}}}} Bing], <!--
+
+-- This comment
+-- here (before a noinclude-tag) prevents an implicit newline.
+-->[{{fullurl:Special:Search|search={{urlencode:{{SUBPAGENAME}}}}&fulltext=Search}} WP]<!--
+
+-->{{int:dot-separator}}Submitted&nbsp;<!--
+
+-->{{#if:{{{submit|}}}
+    |{{time ago|{{{submit}}}}}
+    |???
+   }}<!--
+
+-->{{#if:{{{user|}}}
+     |&nbsp;by [[Special:Contributions/{{{user}}}|{{{user}}}]]<!--
+
+  -->&nbsp;{{unicode|&emsp;}}<!-- This comment
+-- here (before a noinclude-tag) prevents an implicit newline.
+-->([[User talk:{{{user}}}|talk]]:<!--
+
+  --> &nbsp;[{{fullurl:User talk:{{{user}}}|action=edit&editintro=Template:AFC_submission/user_talk_editintro_(hold)&preload=Template:AFC_submission/user_talk_preload_(hold)&preloadtitle={{urlencode:Your submission at [[WP:AFC|Articles for creation]]{{#ifeq:{{TALKSPACE}}|{{ns:Project talk}}|: {{SUBPAGENAME}}}}}}&section=new}} H] <!--
+
+  -->&nbsp;[{{fullurl:User talk:{{{user}}}|action=edit&editintro=Template:AFC_submission/user_talk_editintro_(declined)&preload=Template:AFC_submission/user_talk_preload_(declined)&preloadtitle={{urlencode:Your submission at [[WP:AFC|Articles for creation]]{{#ifeq:{{TALKSPACE}}|{{ns:Project talk}}|: {{SUBPAGENAME}}}}}}&section=new}} D]<!--
+
+  -->&nbsp;[{{fullurl:User talk:{{{user}}}|action=edit&editintro=Template:AFC_submission/user_talk_editintro&preload=Template:AFC_submission/user_talk_preload&preloadtitle={{urlencode:Your submission at [[WP:AFC|Articles for creation]]{{#ifeq:{{TALKSPACE}}|{{ns:Project talk}}|: {{SUBPAGENAME}}}}}}&section=new}} +]<!--
+
+  -->)
+   }}<!--
+
+-->{{#if:{{{author|}}}
+     |&nbsp;by {{{author}}}
+   }}<!--
+
+-->{{int:dot-separator}}Last edited {{time ago|{{REVISIONTIMESTAMP}}}}{{#if:{{REVISIONUSER}}|&nbsp;by [[User:{{REVISIONUSER}}|{{REVISIONUSER}}]]}}<small>}}<small>
+{{#switch:{{FULLPAGENAME}}
+     |Wikipedia:Articles for creation/{{SUBPAGENAME}}
+     |Wikipedia talk:Articles for creation/{{SUBPAGENAME}}=
+     |#default=
+*'''Warning:''' This page should probably be located at [[Wikipedia talk:Articles for creation/{{SUBPAGENAME}}]] ([{{fullurl:index.php|title=Special:MovePage/{{FULLPAGENAMEE}}&wpNewTitle=Wikipedia_talk:Articles+for+creation/{{SUBPAGENAMEE}}&wpReason={{urlencode:Preferred location for [[WP:AFC|AfC]] submissions}}}} move]).
+   }}<!--
+
+-->{{#if:{{{submit|}}}|
+     | 
+*'''Warning:''' This submission is not timestamped and so will be permanently at the back of the queue. Please replace this template with <span style="white-space:nowrap; font-family: monospace"><nowiki>{{subst:submit}}</nowiki></span>.
+   }}<!--
+
+-->{{#ifexist:{{SUBPAGENAME}}| 
+*'''Warning:''' A page with this title exists. Please make sure that this proposed article does not already exist or that it does not need to be moved to a different title.
+
+   |}}<!--
+
+--></span></small></small>
+<noinclude>[[es:Plantilla:Enviar artículos/herramientas]]
+[[Category:WikiProject Articles for creation]]</noinclude>
