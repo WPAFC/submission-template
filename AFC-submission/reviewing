@@ -1,0 +1,22 @@
+{{ombox
+| type  = notice
+| image = [[File:AFC-Logo Pending.svg|center|75px]]
+| imageright = [[Image:Ambox clock.svg|75px|alt=|link=]]
+| style = background-color: #b1dae8;
+| textstyle = CSS values
+| text  = <span style="font-size: 115%">'''Review in progress.'''</span>
+A reviewer is in the process of reviewing this submission and the result should be posted shortly. 
+{{#if:{{{reason|}}}
+ |The reviewer left the following comment:
+:{{AFC submission/comments|{{{reason}}}|{{{details|}}}}}<br />
+}}
+As a courtesy, please do not edit this submission while this message is displayed. The user who added this notice will be listed in the [{{SERVER}}{{localurl:{{NAMESPACE}}:{{PAGENAME}}|action=history}} page history]. This message is intended to help reduce [[Help:Edit conflict|edit conflicts]], and to avoid reviewers duplicating each other's work.
+{{AFC submission/tools
+ |submit={{{submit|}}}
+ |author={{{author|}}}
+ |user={{{user|}}}
+}}
+}}<includeonly>{{NOINDEX}}{{#switch:{{lc:{{SUBPAGENAME}}}}|sandbox|sand box|sand-box|test|testcase|test case|test-case|testcases|test cases|test-cases=|#default=[[Category:Pending AfC submissions|R{{#if:{{{submit|}}}
+ |{{#expr:trunc({{{submit}}}/100)}}|3
+}}]][[Category:Pending AfC submissions being reviewed now]]}}</includeonly><noinclude>{{pp-template|small=yes}}</noinclude>
+<noinclude>{{doc|Template:AFC submission/doc}}</noinclude>
