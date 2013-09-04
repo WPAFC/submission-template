@@ -1,0 +1,46 @@
+<noinclude>{{pp-template|small=yes}}</noinclude>{{ombox
+| type  = notice
+| image =[[Image:AFC-Logo.svg|center|75px|link=]]
+| style = background-color: #f3eba3;
+| text  = <span style="font-size: 115%">'''Review waiting.'''</span>
+{{#switch:{{AFC status/level}}
+|8
+|7 = This may take several weeks, even months. '''The Articles for creation process is ''severely'' backlogged.''' Please be patient.
+|6 = This may take over 3 weeks. '''The Articles for creation process is very highly backlogged. Please be patient.'''
+|5 = This may take 2–3 weeks. ''The articles for creation process is highly backlogged. Please be patient.''
+|4 = This may take a week or more. ''The Articles for creation process is backlogged. Please be patient.''
+|3 = This may take a week or more. ''The Articles for creation process is slightly backlogged. Please be patient.''
+|This may take a week or more.
+}} There are {{#expr:{{PAGESINCATEGORY:Pending AfC submissions|R}}-5}} submissions [[:Category:Pending AfC submissions|waiting for review]].
+----
+*If the submission is '''accepted''', then this page will be moved into the article space.<br>
+*If the submission is '''declined''', then the reason will be posted here. Please check back here later to see the outcome of your request.<br/>
+*In the meantime, you can continue to improve this article by pressing the "Edit" tab at the top of the window.
+<div style="text-align:center; background-color: #FFFFCC; border: 1px solid #FFCC00; margin: 0.5em; padding: 0.5em;">If you require extra assistance, you can visit our [[Wikipedia:WikiProject Articles for creation/Help desk|help desk]].<br /><span style="font-size:120%;">[{{fullurl:Wikipedia:WikiProject_Articles_for_creation/Help_desk|action=edit&section=new&preloadtitle={{urlencode:Review of [[{{NAMESPACE}}:{{PAGENAME}}]]}}}} Click here to ask a new question at the '''help desk''']<br /> [http://webchat.freenode.net/?channels=wikipedia-en-help Click here to get assistance via '''live help chat''']</span></div>
+{{AFC submission/helptools}}
+{{AFC submission/tools
+ |submit={{{submit|}}}
+ |author={{{author|}}}
+ |user={{{user|}}}
+}}
+}}{{#ifeq:{{BASEPAGENAME}}|AFC submission|
+ |{{NOINDEX}}[[Category:Pending AfC submissions|P{{#if:{{{submit|}}}
+  |{{#expr:trunc({{{submit}}}/100)}}|3
+ }}]]
+ [[Category:{{AfC age category|ts={{{submit|}}}|status=pending}}|{{#if:{{{submit|}}}
+  |{{#expr:trunc({{{submit}}}/100)}}|3
+ }}]]
+}}<!--
+
+See https://en.wikipedia.org/w/index.php?title=Wikipedia_talk%3AWikiProject_Articles_for_creation&diff=548201182&oldid=548180058
+
+-->{{#ifeq:{{{type|}}}|template|[[Category:Template and disambiguation AfC submissions|{{#if:{{{submit|}}}
+  |{{#expr:trunc({{{submit}}}/100)}}|3
+ }}]]}}
+{{#ifeq:{{{type|}}}|dab|[[Category:Template and disambiguation AfC submissions|{{#if:{{{submit|}}}
+  |{{#expr:trunc({{{submit}}}/100)}}|3
+ }}]]}}<noinclude>
+{{documentation|Template:AFC_submission/doc}}
+[[es:Plantilla:Enviar artículo/pendiente]]
+[[zh:Template:AFC submission/pending]] 
+</noinclude>
