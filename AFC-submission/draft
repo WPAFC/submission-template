@@ -1,0 +1,31 @@
+{{ombox
+| type  = notice
+| image = [[File:AFC-Logo Hold.svg|center|75px]]
+| imageright = [[File:Under construction icon-blue.svg|75px|alt=|link=]]
+| style = background-color: #d2d3cc;
+| textstyle = CSS values
+| text  = <span style="font-size: 115%">'''Article not currently submitted for review.'''</span>
+This is a draft [[WP:AFC|Articles for creation]] submission. It is '''not''' currently pending review. There is no deadline, you can take your time writing this draft.
+----
+{{#if:{{{reason|}}}
+ |
+{{divbox|yellow|The reviewer {{#if:{{{decliner|}}}|[[User talk:{{{decliner}}}|{{{decliner}}}]] ([{{fullurl:User_talk:{{urlencode:{{{decliner}}}|WIKI}}|action=edit&section=new&preloadtitle={{urlencode:Your review at [[{{NAMESPACE}}:{{PAGENAME}}]]}}}} contact him/her])}} left the following suggestions on improving your draft:|
+:{{AFC submission/comments|{{{reason}}}|{{{details|}}}}}}}
+}}
+* To edit the draft click on the "Edit" tab at the top of the window.
+* Note: the submission-received box appears at the ''bottom'' of the page at first. If it's there, your draft has been submitted correctly.
+<div style="text-align:center; background-color: #FFFFCC; border: 1px solid #FFCC00; margin: 0.5em; padding: 0.5em;">If you require extra assistance, you can visit our [[Wikipedia:WikiProject Articles for creation/Help desk|help desk]].<br /><span style="font-size:120%;">[{{fullurl:Wikipedia:WikiProject_Articles_for_creation/Help_desk|action=edit&section=new&preloadtitle={{urlencode:Review of [[{{NAMESPACE}}:{{PAGENAME}}]]}}}} Click here to ask a new question at the '''help desk''']<br /> [http://webchat.freenode.net/?channels=wikipedia-en-help Click here to get assistance via '''live help chat''']</span></div>
+{{AFC submission/helptools}}
+{{AFC submission/tools
+ |submit={{{submit|}}}
+ |author={{{author|}}}
+ |user={{{user|}}}
+}}<div style="border-top: 1px #AAA solid; margin-top:5px; text-align: center;">{{Clickable button 2|{{Space|5}}Submit your draft when you are ready for it to be reviewed!{{Space|5}}|url={{fullurl:{{FULLPAGENAME}}|action=edit&section=new&preload=Template:AFC_submission/Subst&editintro=Template:AFC_submission/Subst/Editintro}}|class=ui-button-green}}</div>
+}}<includeonly>{{NOINDEX}}[[Category:Draft AfC submissions|P{{#if:{{{submit|}}}
+ |{{#expr:trunc({{{submit}}}/100)}}|3
+}}]]
+<!-- Spliced over from Template:AFC_submission/declined R:566236518 -->
+{{#ifexpr: {{#time: U | {{REVISIONTIMESTAMP}} +6 months }} < {{#time: U}}
+    | [[Category:G13 eligible AfC submissions|{{padleft:{{#expr:(({{#time:y|{{REVISIONTIMESTAMP}}}}*12)+{{REVISIONMONTH1}})}}|3|0}}]]
+   }}
+</includeonly>
