@@ -28,6 +28,7 @@
        |
        |
 You are encouraged to make improvements by clicking on the "'''Edit'''" tab at the top of this page. If you require extra help, ask a question at the [{{fullurl:Wikipedia:WikiProject_Articles_for_creation/Help_desk|action=edit&section=new&preloadtitle={{urlencode:Review of [[{{NAMESPACE}}:{{PAGENAME}}]]}}}} '''Articles for creation help desk''']. There is also a [http://webchat.freenode.net/?channels=wikipedia-en-help '''live help chat'''] with experienced editors. {{findsources|{{SUBPAGENAME}}}}.
+<includeonly>{{#ifexpr: {{#time: U | {{REVISIONTIMESTAMP}} +6 months }} < {{#time: U}}|<div style="text-align: center; background-color: #FCC; border: 1px solid #FAA; margin: 0.5em; padding: 0.5em; font-weight: bold;">This draft has not been edited in over six months and qualifies to be deleted per [[CSD:G13]].</div>[[Category:G13 eligible AfC submissions|{{padleft:{{#expr:(({{#time:y|{{REVISIONTIMESTAMP}}}}*12)+{{REVISIONMONTH1}})}}|3|0}}]]}}</includeonly>
       }}
 <!--
    --><small><!--
@@ -76,9 +77,6 @@ You are encouraged to make improvements by clicking on the "'''Edit'''" tab at t
 --><includeonly><!--
 -->{{NOINDEX}}<!--
 -->[[Category:Declined AfC submissions|{{SUBPAGENAME}}]]<!--
--->{{#ifexpr: {{#time: U | {{REVISIONTIMESTAMP}} +6 months }} < {{#time: U}}
-    | [[Category:G13 eligible AfC submissions|{{padleft:{{#expr:(({{#time:y|{{REVISIONTIMESTAMP}}}}*12)+{{REVISIONMONTH1}})}}|3|0}}]]
-   }}<!--
 --></includeonly><noinclude>
 {{documentation}}
 </noinclude>
